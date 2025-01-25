@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h3>Student Registration Form</h3>
+    <form th:action="@{/processStudentForm}" th:object="${student}" method="POST">
+        <p>First Name: <input type="text" th:field="*{firstName}"></p>
+        <p>Last Name: <input type="text" th:field="*{lastName}"></p>
+        <p> Country :
+            <select th:field="*{country}">
+<!--                <option th:value="Brazil">Brazil</option>-->
+<!--                <option th:value="France">France</option>-->
+<!--                <option th:value="Germany">Germany</option>-->
+<!--                <option th:value="India">India</option>-->
+                <option th:each="tempCountry : ${countries}" th:value="${tempCountry}" th:text="${tempCountry}"></option>
+            </select>
+        </p>
+        <p> Favorite Programming Language:
+<!--            <input type="radio" th:field="*{favoriteLanguage}" th:value="Go">Go</input>-->
+<!--            <input type="radio" th:field="*{favoriteLanguage}" th:value="Java">Java</input>-->
+<!--            <input type="radio" th:field="*{favoriteLanguage}" th:value="Python">Python</input>-->
+            <input type="radio" th:field="*{favoriteLanguage}"
+                   th:each="tempLang : ${languages}"
+                   th:value="${tempLang}"
+                   th:text="${tempLang}" />
+        </p>
+        <p>Favorite Operating Systems:
+<!--            <input type="checkbox" th:field="*{favoriteSystems}" th:value="Linux" />Linux-->
+<!--            <input type="checkbox" th:field="*{favoriteSystems}" th:value="macOS" />macOS-->
+<!--            <input type="checkbox" th:field="*{favoriteSystems}" th:value="'Microsoft Windows'" />Microsoft Windows-->
+            <input type="checkbox" th:field="*{favoriteSystems}"
+                   th:each="tempSystem : ${systems}"
+                   th:value="${tempSystem}"
+                   th:text="${tempSystem}"/>
+        </p>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

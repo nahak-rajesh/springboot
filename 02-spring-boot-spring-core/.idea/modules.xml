@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/02-spring-boot-spring-core.iml" filepath="$PROJECT_DIR$/.idea/02-spring-boot-spring-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05-primary/springcoredemo.iml" filepath="$PROJECT_DIR$/05-primary/springcoredemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04-qualifiers/springcoredemo (1).iml" filepath="$PROJECT_DIR$/04-qualifiers/springcoredemo (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/07-bean-scopes/springcoredemo (2).iml" filepath="$PROJECT_DIR$/07-bean-scopes/springcoredemo (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/03-setter-injection/springcoredemo (3).iml" filepath="$PROJECT_DIR$/03-setter-injection/springcoredemo (3).iml" />
+      <module fileurl="file://$PROJECT_DIR$/09-java-config-bean/springcoredemo (4).iml" filepath="$PROJECT_DIR$/09-java-config-bean/springcoredemo (4).iml" />
+      <module fileurl="file://$PROJECT_DIR$/02-component-scanning/springcoredemo (5).iml" filepath="$PROJECT_DIR$/02-component-scanning/springcoredemo (5).iml" />
+      <module fileurl="file://$PROJECT_DIR$/06-lazy-initialization/springcoredemo (6).iml" filepath="$PROJECT_DIR$/06-lazy-initialization/springcoredemo (6).iml" />
+      <module fileurl="file://$PROJECT_DIR$/01-constructor-injection/springcoredemo (7).iml" filepath="$PROJECT_DIR$/01-constructor-injection/springcoredemo (7).iml" />
+      <module fileurl="file://$PROJECT_DIR$/08-bean-lifecycle-methods/springcoredemo (8).iml" filepath="$PROJECT_DIR$/08-bean-lifecycle-methods/springcoredemo (8).iml" />
+    </modules>
+  </component>
+</project>
